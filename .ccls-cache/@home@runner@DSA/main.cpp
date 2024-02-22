@@ -3,29 +3,17 @@
 #include <vector>
 using namespace std;
 
-// Function declarations
-//void left_rotate(vector<int> &arr);     // Pass arr as reference
-//void findFrequencies(vector<int> &arr); // Pass arr as reference
+
 void left_rotate(vector <int> &);
 void findFrequencies(vector <int> &);
+void trap_rainwater(vector<int>&);
 int main() {
   vector<int> arr;
-  left_rotate(arr); // Pass arr to left_rotate
+  left_rotate(arr); 
   cout << endl;
-  findFrequencies(arr); // Pass arr to findFrequencies
+  findFrequencies(arr);
+  cout<<endl;
+  trap_rainwater(arr);
   return 0;
 }
 
-// #include <iostream>
-// #include <vector>
-// using namespace std;
-
-// // Function declarations
-// void left_rotate();
-// void findFrequencies();
-
-// int main() {
-//   left_rotate();
-//   findFrequencies();
-//   return 0;
-// }

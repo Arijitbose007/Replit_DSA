@@ -14,7 +14,7 @@ void findFrequencies(vector<int> &arr) { // Pass arr as const reference
 
   // Print frequencies
   cout << "Element : Frequency" << endl;
-  for (const auto &pair : freqMap) {
+  for (auto pair : freqMap) {
     cout << pair.first << " : " << pair.second << endl;
   }
 }
