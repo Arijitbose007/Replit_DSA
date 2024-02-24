@@ -11,11 +11,12 @@ using namespace std;
  int max_subarray(vector<int>&);
  void even_odd_subarray(vector <int> &);
  void circular_sum_subarray(vector <int> &);
+ void major_element(vector <int> &);
 int main() {
   int num, size = 0 ;
-  vector<int> arr{8, -4, 3, -5, 4};
+  vector<int> arr{6,8,4,8,8};
   size = arr.size();
-  cout << "Enter a number (1 for left rotate, 2 for finding frequencies, 3 for trapping rainwater, 4 for consecutive ones, 5 for max subarray, 6 for longest even-odd subarray, 7 for longest even-odd subarray, 8 for circular sum subarray ): ";
+  cout << "Enter a number (1 for left rotate, 2 for finding frequencies, 3 for trapping rainwater, 4 for consecutive ones, 5 for max subarray, 6 for longest even-odd subarray, 7 for circular sum subarray, 8 for major element ): ";
     cin >> num;
   
     switch (num) {
@@ -39,6 +40,9 @@ int main() {
             break;
        case 7:
             circular_sum_subarray(arr);
+            break;
+       case 8:
+            major_element(arr);
             break;
         default:
             cout << "Invalid choice";
