@@ -8,13 +8,14 @@ using namespace std;
  void findFrequencies(vector <int> &);
  void trap_rainwater(vector<int>&);
  void consecutive_one(vector<int>&,int);
- void max_subarray(vector<int>&);
+ int max_subarray(vector<int>&);
+ void even_odd_subarray(vector <int> &);
+ void circular_sum_subarray(vector <int> &);
 int main() {
   int num, size = 0 ;
-  vector<int> arr{-3,8,-2,4,-5,6};
+  vector<int> arr{8, -4, 3, -5, 4};
   size = arr.size();
-  cout<<size;
-  cout << "Enter a number (1 for left rotate, 2 for finding frequencies, 3 for trapping                 rainwater, 4 for consecutive ones, 5 for max subarray): ";
+  cout << "Enter a number (1 for left rotate, 2 for finding frequencies, 3 for trapping rainwater, 4 for consecutive ones, 5 for max subarray, 6 for longest even-odd subarray, 7 for longest even-odd subarray, 8 for circular sum subarray ): ";
     cin >> num;
   
     switch (num) {
@@ -32,6 +33,12 @@ int main() {
             break;
        case 5:
             max_subarray(arr);
+            break;
+       case 6:
+            even_odd_subarray(arr);
+            break;
+       case 7:
+            circular_sum_subarray(arr);
             break;
         default:
             cout << "Invalid choice";
