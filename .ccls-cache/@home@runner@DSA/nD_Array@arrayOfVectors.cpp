@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void arrayOfVectors(int, int);
+
 void arrayOfVectors(int m, int n) {
   vector<int> arr[m];
   for (int i = 0; i < m; i++) {
@@ -10,7 +10,9 @@ void arrayOfVectors(int m, int n) {
   }
   for (int i = 0; i < m; i++) {
     for (int j = 0; j < n; j++) {
-      cout << arr[i][j] << " " << endl;
+      cout << arr[i][j] << " ";
     }
+    cout << endl;
   }
+  cout << endl;
 }
