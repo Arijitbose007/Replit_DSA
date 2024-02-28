@@ -9,7 +9,7 @@ void major_element(vector<int> &arr){
       else
         count --;
       if(count == 0){
-        candidate = i;
+        candidate = arr[i];
         count = 1;
       }
   }

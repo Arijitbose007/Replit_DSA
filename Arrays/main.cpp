@@ -15,7 +15,7 @@ using namespace std;
  void consecutive_flips(vector <int> &);
 int main() {
   int num, size = 0 ;
-  vector<int> arr{1,0,0,0,1,1,0,1,0};
+  vector<int> arr{5,4,5,2,5,8,5};
   size = arr.size();
   cout << "Enter a number (1 for left rotate, 2 for finding frequencies, 3 for trapping rainwater, 4 for consecutive ones, 5 for max subarray, 6 for longest even-odd subarray, 7 for circular sum subarray, 8 for major element,9 for concecutive flips ): ";
     cin >> num;
