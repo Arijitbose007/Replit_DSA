@@ -8,7 +8,7 @@ void vectorOfVectors(int m, int n) {
     for (int j = 0; j < n; j++) {
       v.push_back(i + 1);
     }
-    arr.push_back(v);  // Push the vector v once after it's populated
+    arr.push_back(v);  // Push the vector v once after it's populated.
   }
   for (int i = 0; i < arr.size(); i++) {
     for (int j = 0; j < arr[i].size(); j++) {
