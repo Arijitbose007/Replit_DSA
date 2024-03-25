@@ -12,7 +12,7 @@ void trap_rainwater(vector<int> &arr1) {
     cout << "The water cannot be trapped";
     return;
   }
-
+// dfdf
   vector<int> left_max(n, 0);
   vector<int> right_max(n, 0);
 
